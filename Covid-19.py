@@ -39,12 +39,12 @@ try:
     for data in jeson['data']:
         j += 1
         print('{}['.format(W)+str(j)+']', data['provinsi'])
-        print('   {}- {}Positive   :{}'.format(W,K,
-   W),data['Positive cases'])
-        print('   {}- {}Recovered  :{}'.format(W,H,
-   W),data['recovered'])
-        print('   {}- {}Died :{}'.format(W,M,
-   W),data['Death Cases'])
+        print('   {}- {}Positif   :{}'.format(W,K,
+   W),data['kasusPosi'])
+        print('   {}- {}Sembuh    :{}'.format(W,H,
+   W),data['kasusSemb'])
+        print('   {}- {}Meninggal :{}'.format(W,M,
+   W),data['kasusMeni'])
         print('')
         waktu(0.1)
 except KeyboardInterrupt:
