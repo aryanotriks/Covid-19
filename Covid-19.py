@@ -34,7 +34,7 @@ print(iyeu_logo)
 j = 0
 link = '(this is the logo)
 j = 0
-link = 'https://pakistan-covid-19.mathdro.id/api/provinsi/'
+link = 'https://pakistan-covid-19.mathdro.id/api/provinces/'
 req = requests.get(link)
 jeson = json.loads(req.text)
 try:
