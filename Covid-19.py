@@ -32,13 +32,13 @@ iyeu_logo = """{}
 """.format(M,W)
 print(iyeu_logo)
 j = 0
-link = 'https://pakistan-covid-19.mathdro.id/api/provinsi/'
+link = 'https://covid19.mathdro.id/api/countries/'
 req = requests.get(link)
 jeson = json.loads(req.text)
 try:
     for data in jeson['data']:
         j += 1
-        print('{}['.format(W)+str(j)+']', data['provinsi'])
+        print('{}['.format(W)+str(j)+']', data['countries'])
         print('   {}- {}Positive Cases   :{}'.format(W,K,
    W),data['kasusPosi'])
         print('   {}- {}Recovered Cases  :{}'.format(W,H,
