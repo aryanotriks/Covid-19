@@ -32,7 +32,7 @@ iyeu_logo = """{}
 """.format(M,W)
 print(iyeu_logo)
 j = 0
-link = 'https://covid19.mathdro.id/api/countries'
+link = 'https://Pakistan-covid19.mathdro.id/api/provinces'
 req = requests.get(link)
 jeson = json.loads(req.text)
 try:
