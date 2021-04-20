@@ -32,7 +32,7 @@ iyeu_logo = """{}
 """.format(M,W)
 print(iyeu_logo)
 j = 0
-link = 'https://covid19.mathdro.id/api/countries/'
+link = 'https://covid19.mathdro.id/api/countries/pakistan/'
 req = requests.get(link)
 jeson = json.loads(req.text)
 try:
@@ -40,12 +40,14 @@ try:
         j += 1
         print('{}['.format(W)+str(j)+']', data['countries'])
         print('   {}- {}Positive Cases   :{}'.format(W,K,
-   W),data['kasusPosi'])
+   W),data['confirmed'])
         print('   {}- {}Recovered Cases  :{}'.format(W,H,
-   W),data['kasusSemb'])
+   W),data['recovered'])
         print('   {}- {}Death Cases      :{}'.format(W,M,
-   W),data['kasusMeni'])
+   W),data['deaths'])
         print('')
+        print('Stay Home Stay Safe')
+        print('May Allah Bless All The Muslims Died Due To Covid-19')
         waktu(0.1)
 except KeyboardInterrupt:
     print('')
