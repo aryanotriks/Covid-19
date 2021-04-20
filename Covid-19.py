@@ -38,7 +38,7 @@ jeson = json.loads(req.text)
 try:
     for data in jeson['data']:
         j += 1
-        print('{}['.format(W)+str(j)+']', data['countries'])
+        print('{}['.format(W)+str(j)+']', data['pakistan'])
         print('   {}- {}Positive Cases   :{}'.format(W,K,
    W),data['confirmed'])
         print('   {}- {}Recovered Cases  :{}'.format(W,H,
